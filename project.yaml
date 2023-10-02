@@ -1,0 +1,27 @@
+kind: project
+metadata:
+  name: unlockpa-jovyan
+  created: '2023-10-02T08:31:04.000885'
+spec:
+  functions:
+  - url: data-prep.py
+    name: data-prep
+    kind: job
+    image: mlrun/mlrun
+    handler: breast_cancer_generator
+  - url: faq-prep.py
+    name: faq-prep
+    kind: job
+    image: mlrun/mlrun
+    handler: parse_faq_excel
+  workflows: []
+  artifacts: []
+  conda: ''
+  source: ''
+  desired_state: online
+  build:
+    commands: []
+    requirements: []
+  custom_packagers: []
+status:
+  state: online
