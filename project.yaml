@@ -24,8 +24,8 @@ spec:
   workflows: []
   artifacts: []
   conda: ''
-  source: git://kazhamiakin@github.com/kazhamiakin/unlockpa.git#main
-  origin_url: git://kazhamiakin@github.com/kazhamiakin/unlockpa#main
+  source: git://github.com/kazhamiakin/unlockpa.git#main
+  origin_url: git://kazhamiakin@github.com/kazhamiakin/unlockpa#refs/heads/main
   load_source_on_run: true
   desired_state: online
   build:
