@@ -14,10 +14,18 @@ spec:
     kind: job
     image: mlrun/mlrun
     handler: parse_faq_excel
+    with_repo: true
+  - url: faq-train.py
+    name: faq-trainer
+    kind: job
+    image: mlrun/mlrun
+    handler: train_faq_caseclus
+    with_repo: true
   workflows: []
   artifacts: []
   conda: ''
-  source: ''
+  source: https://github.com/kazhamiakin/unlockpa.git
+  load_source_on_run: true
   desired_state: online
   build:
     commands: []
