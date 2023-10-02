@@ -1,6 +1,6 @@
 kind: project
 metadata:
-  name: unlockpa-jovyan
+  name: unlockpa-mlrun
   created: '2023-10-02T08:31:04.000885'
 spec:
   functions:
@@ -24,7 +24,8 @@ spec:
   workflows: []
   artifacts: []
   conda: ''
-  source: https://github.com/kazhamiakin/unlockpa.git
+  source: git://kazhamiakin@github.com/kazhamiakin/unlockpa.git#main
+  origin_url: git://kazhamiakin@github.com/kazhamiakin/unlockpa#main
   load_source_on_run: true
   desired_state: online
   build:
