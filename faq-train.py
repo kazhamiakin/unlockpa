@@ -1,5 +1,6 @@
 
 import mlrun
+import sys
 sys.path.append("./code")
 from caseclus import Caseclus
 
