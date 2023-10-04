@@ -1,6 +1,7 @@
 
 import mlrun
-from code.caseclus import Caseclus
+sys.path.append("./code")
+from caseclus import Caseclus
 
 @mlrun.handler()
 def train_faq_caseclus(knowledge_base, stopwords, synonyms, compounds, model_name: str = 'faq_model'):    

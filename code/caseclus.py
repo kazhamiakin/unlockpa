@@ -1,4 +1,4 @@
-from .base import Base
+from base import Base
 from exceptions import ModelNotTrained, ModelTopicsError, ModelClusterError
 from numpy.random import seed
 from sklearn.feature_extraction.text import CountVectorizer
@@ -7,7 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.pipeline import Pipeline
 from sklearn.decomposition import TruncatedSVD
 from sklearn.cluster import KMeans
-from .utils import *
+from utils import *
 import nltk
 
 from .spacyutil import spacyHelper, vectorize_util
