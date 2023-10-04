@@ -10,7 +10,7 @@ from sklearn.cluster import KMeans
 from utils import *
 import nltk
 
-from .spacyutil import spacyHelper, vectorize_util
+from spacyutil import spacyHelper, vectorize_util
 from mlrun.frameworks.sklearn import apply_mlrun
 
 class Caseclus(Base):

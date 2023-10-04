@@ -3,7 +3,7 @@
 
 import numpy as np
 import spacy
-from sklearn.feature_extraction.text import CountVectorizer, VectorizerMixin
+from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.base import BaseEstimator
 from scipy.sparse import csr_matrix
 from spacy.lang.it.stop_words import STOP_WORDS
@@ -93,7 +93,7 @@ class SpacyLemmaCountVectorizer(CountVectorizer):
         doc_lemmatized = self.lemmatize_from_docs(spacy_docs)
         return super(SpacyLemmaCountVectorizer, self).fit_transform(doc_lemmatized, y)
     
-class SpacyWord2VecVectorizer(BaseEstimator, VectorizerMixin):
+class SpacyWord2VecVectorizer(BaseEstimator):
     
     def __init__(self, sparsify=True):
         self.sparsify = sparsify

@@ -3,7 +3,7 @@ from num2words import num2words
 import pandas
 import os
 
-from .spacyutil import spacyHelper,vectorize_util
+from spacyutil import spacyHelper,vectorize_util
 
 #############################################
 ############ Error handling #################
